@@ -1,0 +1,263 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  background-color: #faf9fc;
+  
+  background-image:
+    radial-gradient(ellipse at 100% 0%, rgba(151, 96, 216, 0.65), transparent 55%),
+    radial-gradient(ellipse at 0% 100%, rgba(236, 143, 205, 0.65), transparent 50%),
+    radial-gradient(ellipse at 0% 35%, rgba(183, 220, 246, 0.55), transparent 45%),
+    linear-gradient(120deg, #ffffff, #f8f5fc);
+}
+
+
+.pagina {
+  width: 100%;
+  max-width: 588px;
+}
+
+
+.pagina-larga {
+  max-width: 800px;
+}
+
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px;
+  text-align: center;
+}
+
+.foto-perfil {
+  display: block;
+  width: 112px;
+  height: 112px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.perfil h1,
+.perfil p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  overflow-wrap: anywhere;
+}
+
+.links-principais {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+
+
+.botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 56px;
+  padding: 15px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.botao:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-color: #000000;
+}
+
+
+a:focus-visible {
+  outline: 3px solid #512783;
+  outline-offset: 4px;
+}
+
+.rodape {
+  text-align: center;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.redes-sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.redes-sociais a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.redes-sociais img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.rodape p {
+  margin: 0;
+  padding: 0 24px 24px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.titulo-secao {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.sobre-mim {
+  text-align: center;
+}
+
+.sobre-mim p {
+  margin: 0 0 16px;
+  overflow-wrap: anywhere;
+}
+
+.sobre-mim p:last-child {
+  margin-bottom: 0;
+}
+
+
+.cartoes-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.cartao-projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+.imagem-projeto {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cartao-projeto h3,
+.cartao-projeto p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.cartao-projeto h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cartao-projeto p {
+  font-size: 14px;
+}
+
+.botao-projeto {
+  min-height: 40px;
+  padding: 7px 16px;
+  font-size: 14px;
+}
+
+.navegacao-voltar {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.navegacao-voltar a {
+  color: #000000;
+  text-underline-offset: 4px;
+}
+
+
+.pular-conteudo {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  padding: 8px 12px;
+  transform: translateY(-160%);
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.pular-conteudo:focus {
+  transform: translateY(0);
+}
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  .perfil {
+    padding: 24px 0;
+  }
+
+  .links-principais {
+    padding: 24px 0;
+  }
+
+  .cartoes-projetos {
+    grid-template-columns: 1fr;
+  }
+
+  .rodape p {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
